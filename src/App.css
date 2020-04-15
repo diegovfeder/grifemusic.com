@@ -1,21 +1,16 @@
 .App {
+  /* background-image: url("./images/background.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: "transparent";
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,11 +23,28 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card {
+  font-size: 12px;
+}
+.card > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 14px;
+  text-align: center;
+}
+
+.content {
+  color: gray;
+}
+
+@media (min-width: 650px) {
+  .App {
+    /* background-image: url("./images/bgs/grain-mobile.png"); */
+    background-position: center center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-content {
+    align-items: flex-end;
+    justify-content: center;
   }
 }
