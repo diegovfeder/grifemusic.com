@@ -6,8 +6,8 @@ import "./App.css";
 import { Grid } from "@material-ui/core/";
 import { CircularProgress } from "@material-ui/core";
 
-import desktopImage from "./images/bgs/grain-desktop-1.png";
-import mobileImage from "./images/bgs/grain-mobile.png";
+import desktopImage from "./images/bgs/grain-desktop-1-resize.png";
+import mobileImage from "./images/bgs/grain-mobile-resize.png";
 
 import { Icon } from "@iconify/react";
 import instagramIcon from "@iconify/icons-simple-icons/instagram";
