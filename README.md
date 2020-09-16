@@ -6,15 +6,9 @@
   grifemusic.com web app
 </h4>
 
-
-<p align="center">
-    <a href="#-Project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#rocket-Technology">Technology</a>&nbsp;&nbsp;&nbsp;
-</p>
-
 <br>
 
-## 🔥 Project
+## 🔥
 
 Two dudes building something great!
 - [React](https://reactjs.org)
@@ -29,7 +23,7 @@ $ git clone https://github.com/diegovfeder/grifemusic.com
 ```
 
 
-### 💻 React Web App 
+### 💻 
 
 ```bash
 # Go to folder
