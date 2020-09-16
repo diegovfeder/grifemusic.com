@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "grifemusic-react-website"
+    "default": "grifemusic-react-website",
+    "staging": "grife-music"
   }
 }
