@@ -2,28 +2,28 @@
     <img alt="GRIFE" title="GRIFE" />
 </h1>
 
-<h4 align="center">
-  grifemusic.com web app
-</h4>
+<!--  <h4 align="center"> grifemusic.com web app </h4> -->
 
 <br>
 
-## 🔥
+## 🔥 Project
 
 Two dudes building something great!
+
+Using
 - [React](https://reactjs.org)
 - [Firebase](https://firebase.google.com/)
 - [yarn]
 
-# :construction_worker: 
+Ask for permissions if needed...
+
 ```bash
-# Get Acess or open public
 # Clone Repository
 $ git clone https://github.com/diegovfeder/grifemusic.com
 ```
 
 
-### 💻 
+### 💻 React Web App
 
 ```bash
 # Go to folder
