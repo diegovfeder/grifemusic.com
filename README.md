@@ -8,8 +8,6 @@
 
 ## 🔥 Project
 
-Two dudes building something great!
-
 Using
 - [React](https://reactjs.org)
 - [Firebase](https://firebase.google.com/)
