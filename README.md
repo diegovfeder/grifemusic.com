@@ -17,16 +17,11 @@
 ## 🔥 Project
 
 Two dudes building something great!
-
-## :rocket: Technology
-
-This project was developed with the following technologies:
-
 - [React](https://reactjs.org)
 - [Firebase](https://firebase.google.com/)
+- [yarn]
 
-# :construction_worker: How to run
-
+# :construction_worker: 
 ```bash
 # Get Acess or open public
 # Clone Repository
@@ -34,13 +29,7 @@ $ git clone https://github.com/diegovfeder/grifemusic.com
 ```
 
 
-//TODO:
-### 📦 API / Cloud Functions
-Our API could be hosted in firebase via cloud functions.
-Access API at http://localhost:3333/
-
-
-### 💻 Web 
+### 💻 React Web App 
 
 ```bash
 # Go to folder
