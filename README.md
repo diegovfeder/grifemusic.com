@@ -1,9 +1,6 @@
 <h1 align="center">
-    <img alt="GRIFE" title="GRIFE" />
+    GRIFE
 </h1>
-
-<!--  <h4 align="center"> grifemusic.com web app </h4> -->
-
 <br>
 
 ## 🔥 Project
