@@ -20,7 +20,7 @@ $ git clone https://github.com/diegovfeder/grifemusic.com
 $ cd grifemusic.com
 
 # Install Dependencies
-$ yarn install
+$ yarn
 
 # Run Aplication
 $ yarn start
