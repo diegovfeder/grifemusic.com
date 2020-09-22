@@ -11,19 +11,14 @@
 Using
 - [React](https://reactjs.org)
 - [Firebase](https://firebase.google.com/)
-- [yarn]
+- [Yarn](https://yarnpkg.com/)
 
 Ask for permissions if needed...
 
 ```bash
 # Clone Repository
 $ git clone https://github.com/diegovfeder/grifemusic.com
-```
 
-
-### 💻 React Web App
-
-```bash
 # Go to folder
 $ cd grifemusic.com
 
