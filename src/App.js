@@ -1,7 +1,8 @@
 import React from "react";
 import {Gradient} from 'react-gradient'
 import constants from './constants'
-import logo from "./images/logo-lettering.png";
+import logo from "./images/logo.png";
+import LogoTest from "./images/logo-svg-test.svg"
 // import desktopImage from "./images/bgs/grain-desktop-1-resize.png";
 // import mobileImage from "./images/bgs/grain-mobile-resize.png";
 import StyledButton from './styled/StyledButton'
@@ -101,16 +102,17 @@ export default function App() {
         }
       }
     >
-      <Gradient
+      {/* <Gradient
             gradients={ gradients } // required
             property="background"
             duration={ 3000 }
             angle="45deg"
-        />
+        /> */}
       <div className="App-content">
         <header className="App-header">
           {/* Responsive Logo Image */}
-          <img
+          {/* <LogoTest/> */}
+          {/* <img
             src={logo}
             style={{
               marginTop: 50,
@@ -118,11 +120,11 @@ export default function App() {
               height: windowWidth >= 650 ? "25%" : "50%"
             }}
             alt="logo"
-          />
+          /> */}
 
           {/* Headline TextView */}
           <Grid direction="row">
-            <h3>{constants.latestRelease}</h3>
+            <h2>{constants.latestRelease}</h2>
           </Grid>
           
           <Spotify/>
