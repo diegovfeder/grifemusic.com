@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const StyledButton = styled.button`
     -moz-box-flex: 0;
-    background-color: #eea56f;
+    background-color: #cE5117;
     border: 1px solid #7b3723;
     border-image: none 100% 1 0 stretch;
     border-radius: 0 2px 2px 0;
