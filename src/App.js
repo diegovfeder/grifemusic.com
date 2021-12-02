@@ -41,9 +41,10 @@ export default function App() {
       <div className="App-content">
         <header className="App-header">
           <Grid direction="row">
-            <Headline>{constants.latestRelease}</Headline>
+            <Headline>{constants.TITLE}</Headline>
           </Grid>
           <Spotify/>
+          <Headline size="medium">{constants.SUB_TITLE}</Headline>
           <StyledButton onClick={handleDownloadButtonClick}>
             BUY IT NOW!
           </StyledButton>
