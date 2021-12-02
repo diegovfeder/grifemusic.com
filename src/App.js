@@ -3,6 +3,7 @@ import constants from './constants'
 import StyledButton from './styled/StyledButton'
 import { Grid } from "@material-ui/core/";
 import ButtonGridComponent from './components/ButtonGridComponent'
+import Headline from "./components/Headline";
 import Spotify from './components/Spotify'
 import "./App.css";
 
@@ -30,17 +31,17 @@ export default function App() {
       className="App"
       style={
         {
-          // backgroundImage: `url(${backgroundImageUrl})`,
-          background:` linear-gradient(rgba(250,0,0,0.5),transparent)`,
           height: "100%",
+          background:` linear-gradient(rgba(250,0,0,0.5),transparent)`,
           backgroundColor: 'rgb(162,76,48)', 
+          // backgroundImage: `url(${backgroundImageUrl})`,
         }
       }
     >
       <div className="App-content">
         <header className="App-header">
           <Grid direction="row">
-            <h2>{constants.latestRelease}</h2>
+            <Headline>{constants.latestRelease}</Headline>
           </Grid>
           <Spotify/>
           <StyledButton onClick={handleDownloadButtonClick}>
