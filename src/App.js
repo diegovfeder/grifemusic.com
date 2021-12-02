@@ -8,7 +8,7 @@ import Spotify from './components/Spotify'
 import "./App.css";
 
 export default function App() {
-  const [_, setWindowWidth] = React.useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
   
   const handleWindowResize = () => {
     setWindowWidth(window.innerWidth);
@@ -34,7 +34,6 @@ export default function App() {
           height: "100%",
           background:` linear-gradient(rgba(250,0,0,0.5),transparent)`,
           backgroundColor: 'rgb(162,76,48)', 
-          // backgroundImage: `url(${backgroundImageUrl})`,
         }
       }
     >
@@ -43,8 +42,8 @@ export default function App() {
           <Grid direction="row">
             <Headline>{constants.TITLE}</Headline>
           </Grid>
-          <Spotify/>
-          <Headline size="medium">{constants.SUB_TITLE}</Headline>
+          <Spotify containerWidth={windowWidth}/>
+          <Headline size="small">{constants.SUB_TITLE}</Headline>
           <StyledButton onClick={handleDownloadButtonClick}>
             BUY IT NOW!
           </StyledButton>
