@@ -1,6 +1,9 @@
 //TODO:
 import React from 'react'
+
+// Styles
 import styled from "styled-components";
+import {makeStyles} from '@material-ui/core/styles'
 
 // Material UI
 import { CircularProgress, Grid } from "@material-ui/core/";
@@ -104,6 +107,14 @@ const CustomModalComponent = ({props, windowWidth}) => {
     }
   `;
 
+  // Using Material UI
+  const useStyles = makeStyles(theme => ({
+    modal: {
+      paddingTop: theme.spacing(8),
+      paddingBottom: theme.spacing(8),
+      // borderRadius: "24px",
+    },
+  }));
   // Using const for styles
   const formStyle = {
     border: "1px solid #8c1b05",
@@ -127,6 +138,7 @@ const CustomModalComponent = ({props, windowWidth}) => {
     marginLeft: (-windowWidth * 0.88) / 2
   };
 
+  const classes = useStyles();
 
   return(
     <SkyLightStateless
@@ -134,6 +146,7 @@ const CustomModalComponent = ({props, windowWidth}) => {
     onCloseClicked={() => {
       toggleModal(false);
     }}
+    className={classes.modal}
     title="PROMO LIST"
     dialogStyles={
       props.windowWidth >= 650 ? skyLightStyleBig : skyLightStyleSmall
@@ -146,7 +159,6 @@ const CustomModalComponent = ({props, windowWidth}) => {
       alignItems="center"
     >
       {/* TODO: Design a more convidative modal proposing a contract - e-mail for benefits (early releases) */}
-      Leave us your e-mail!
 
       {/* Formik */}
       <form onSubmit={formik.handleSubmit}>
