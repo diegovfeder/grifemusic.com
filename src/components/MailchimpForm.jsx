@@ -1,6 +1,4 @@
 import React from "react";
-
-// import Mailchimp from "react-mailchimp-form";
 import Mailchimp from "./MailChimp";
 
 export default function MailchimpForm() {

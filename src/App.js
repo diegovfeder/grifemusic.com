@@ -1,56 +1,39 @@
-import React from "react";
-import constants from './constants'
-import StyledButton from './styled/StyledButton'
-import { Grid } from "@material-ui/core/";
-import ButtonGridComponent from './components/ButtonGridComponent'
-import Headline from "./components/Headline";
-import Spotify from './components/Spotify'
-import "./App.css";
+import React from 'react';
+import { Grid } from '@material-ui/core';
+import constants from './constants';
+import ButtonGridComponent from './components/ButtonGridComponent';
+import Headline from './components/Headline';
+import Spotify from './components/Spotify';
+import StyledButton from './styled/StyledButton';
+import './App.css';
 
 export default function App() {
-  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
-  
-  const handleWindowResize = () => {
-    setWindowWidth(window.innerWidth);
-  };
-  
-  const handleDownloadButtonClick = e => {
+  const handleDownloadButtonClick = (e) => {
     e.preventDefault();
-    window.open(constants.DOWNLOAD_LINK, "_blank");
+    window.open(constants.DOWNLOAD_LINK, '_blank');
   };
-
-  React.useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
 
   return (
-    <div
+    <main
       className="App"
-      style={
-        {
-          height: "100%",
-          background:` linear-gradient(rgba(250,0,0,0.5),transparent)`,
-          backgroundColor: 'rgb(162,76,48)', 
-        }
-      }
+      style={{
+        height: '100%',
+        background: `linear-gradient(${constants.COLOR_PRIMARY}),transparent)`,
+        backgroundColor: `${constants.COLOR_SECONDARY}`,
+      }}
     >
-      <div className="App-content">
-        <header className="App-header">
-          <Grid direction="row">
-            <Headline>{constants.TITLE}</Headline>
-          </Grid>
-          <Spotify containerWidth={windowWidth}/>
-          <Headline size="small">{constants.SUB_TITLE}</Headline>
-          <StyledButton onClick={handleDownloadButtonClick}>
-            BUY IT NOW!
-          </StyledButton>
-          <ButtonGridComponent/>
-        </header>
-        {/* Not using a body... */}
+      <header className="App-header">
+        <Grid container direction="row">
+          <Headline>{constants.TEXT_TITLE}</Headline>
+        </Grid>
+      </header>
+      <div className="App-body">
+        <Spotify spotifyUri={constants.LINK_SPOTIFY} />
+        <StyledButton onClick={handleDownloadButtonClick}>
+          {constants.TEXT_ACTION_BUTTON}
+        </StyledButton>
+        <ButtonGridComponent />
       </div>
-    </div>
+    </main>
   );
 }

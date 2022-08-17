@@ -1,5 +1,4 @@
 .App {
-  /* background-image: url("./images/background.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -16,26 +15,18 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-body {
+  background-color: "transparent";
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
 }
 
-.card {
-  font-size: 12px;
-}
-.card > .header {
-  width: 100%;
-  border-bottom: 1px solid gray;
-  font-size: 14px;
-  text-align: center;
-}
-
-.content {
-  color: gray;
-}
 
 @media (min-width: 650px) {
   .App {
