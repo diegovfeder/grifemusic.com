@@ -10,7 +10,7 @@ import './App.css';
 export default function App() {
   const handleDownloadButtonClick = (e) => {
     e.preventDefault();
-    window.open(constants.DOWNLOAD_LINK, '_blank');
+    window.open(constants.LINK_DOWNLOAD, '_blank');
   };
 
   return (
