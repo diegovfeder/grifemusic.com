@@ -35,7 +35,7 @@ $ yarn start
 $ yarn build
 
 # Make sure firebase is updated
-$ curl -sL https://firebase.tools | bash
+$ curl -sL firebase.tools | upgrade=true bash
 
 # Login with firebase
 $ firebase login
