@@ -4,7 +4,7 @@ import constants from './constants';
 import ButtonGridComponent from './components/ButtonGridComponent';
 import Headline from './components/Headline';
 import Spotify from './components/Spotify';
-import StyledButton from './styled/StyledButton';
+import StyledButton from './styles/StyledButton';
 import './App.css';
 
 export default function App() {
