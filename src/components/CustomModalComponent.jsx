@@ -59,7 +59,6 @@ const CustomModalComponent = ({ props, windowWidth }) => {
     modal: {
       paddingTop: theme.spacing(8),
       paddingBottom: theme.spacing(8),
-      // borderRadius: "24px",
     },
   }));
 
