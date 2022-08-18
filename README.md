@@ -1,15 +1,12 @@
 # GRIFEMUSIC.COM
 
-## Stack
+Ask for permissions if needed...
 
-Using:
+### Stack
 
 - [React](https://reactjs.org)
 - [Firebase](https://firebase.google.com/)
 - [Yarn](https://yarnpkg.com/)
-
-
-Ask for permissions if needed...
 
 ### Run Locally
 
